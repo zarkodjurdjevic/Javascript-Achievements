@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(32, 161, 204);
+    padding: 720px;
+    padding-top: 410px;
+    display: block;
+    margin: 30px;
+    background:red;
+    border: green;
+    color: green;    
+}
+
+#button {
+    height: 140px;
+    width: 180px;
+}
+
+#health {
+    width: 200px;
+    height: 60px;
+    margin-left: 10px;
+}
+

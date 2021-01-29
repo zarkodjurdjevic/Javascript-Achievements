@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dungeon Masterssss</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+    <button id="button">klik hier</button>
+    <p id="Test"></p>
+    <p id="Totaal"></p>
+</body>
+<script>
+    let button = document.getElementById("button")
+    button.addEventListener("click", rollingForStats)
+
+    var array = []
+
+    function rollingForStats() {
+        var array1 = Math.floor(Math.random() * 6) + 1;
+        var array2 = Math.floor(Math.random() * 6) + 1;
+        var array3 = Math.floor(Math.random() * 6) + 1;
+        var array4 = Math.floor(Math.random() * 6) + 1;
+        array = [array1, array2, array3, array4]
+        var som = 0
+        array.sort();
+        Test.innerHTML = array;
+        for (var i = array.length -1; i > 0; i--) {
+            som = som + array[i]
+        }
+        array = []
+        document.getElementById("Totaal").textContent = som;
+        console.log(array)
+        console.log(som)
+    }
+</script>
+
+</html>

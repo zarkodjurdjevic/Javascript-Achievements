@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="healthbar1.css">
+</head>
+<body>
+    <div class="block">
+        <meter id="health" min="0" max="100" value="100">
+        </meter>
+        <input id="button" type="button" value="attack"></input>
+        <h1 id="HP">..</h1>
+        <script>
+            let mijnButton = document.getElementById('button');
+            let meter = document.getElementById('health');
+            let health = meter.value;
+            mijnButton.addEventListener('click', () => {
+                console.log(health)
+                health = health - 10;
+                meter.value = health;
+                if (health == 0) {
+                document.getElementById("HP").innerHTML = "Game Over"
+                } 
+            });    
+        </script>
+    </div>
+</body>
+</html>

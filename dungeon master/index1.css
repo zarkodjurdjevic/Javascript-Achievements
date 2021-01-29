@@ -1,0 +1,12 @@
+body {
+    margin: 320px;
+    margin-right: 160px;
+    padding: 200px;
+    padding-right: 320%;
+    background-color:lightblue;
+}
+
+#button {
+    width: 90px;
+    height: 60px;
+}
